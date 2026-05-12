@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sidekick Playbook Hub: Zero to Hero</title>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:wght@900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
    DESIGN TOKENS, pulled from the Sidekick pitch deck aesthetic
@@ -138,11 +138,11 @@ kbd {
 }
 
 .brand-logo {
-  width: 180px;
-  height: 55px;
-  border-radius: 8px;
+  width: 140px;
+  height: 140px;
+  border-radius: 14px;
   display: block;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-md);
   overflow: hidden;
 }
 
@@ -1117,28 +1117,18 @@ kbd {
 ============================================================ -->
 <aside class="sidebar" id="sidebar">
   <div class="sidebar-brand">
-    <svg class="brand-logo" viewBox="0 0 360 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sidekick">
-      <defs>
-        <linearGradient id="textSheen" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
-          <stop offset="55%" stop-color="#FFFFFF" stop-opacity="0.96"/>
-          <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.88"/>
-        </linearGradient>
-        <linearGradient id="bgShade" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#FF7518" stop-opacity="1"/>
-          <stop offset="100%" stop-color="#F05A00" stop-opacity="1"/>
-        </linearGradient>
-      </defs>
-      <!-- Orange background with subtle vertical shading -->
-      <rect width="360" height="110" rx="8" fill="url(#bgShade)"/>
-      <!-- Wordmark with subtle sheen -->
-      <text x="180" y="78"
-            font-family="'Archivo Black', system-ui, sans-serif"
-            font-size="68"
-            font-weight="900"
-            fill="url(#textSheen)"
-            text-anchor="middle"
-            letter-spacing="-2.5">sidekick</text>
+    <svg class="brand-logo" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sidekick">
+      <!-- Background: deep warm orange -->
+      <rect width="500" height="500" fill="#DF5F0A"/>
+      <!-- 3D stacked shadow layers — deepest drawn first, lightest last before white -->
+      <text x="250" y="300" font-family="'Nunito', 'Arial Rounded MT Bold', sans-serif" font-size="98" font-weight="900" fill="#3E1200" text-anchor="middle" letter-spacing="-3">sidekick</text>
+      <text x="250" y="293" font-family="'Nunito', 'Arial Rounded MT Bold', sans-serif" font-size="98" font-weight="900" fill="#591E00" text-anchor="middle" letter-spacing="-3">sidekick</text>
+      <text x="250" y="286" font-family="'Nunito', 'Arial Rounded MT Bold', sans-serif" font-size="98" font-weight="900" fill="#752C00" text-anchor="middle" letter-spacing="-3">sidekick</text>
+      <text x="250" y="279" font-family="'Nunito', 'Arial Rounded MT Bold', sans-serif" font-size="98" font-weight="900" fill="#923C00" text-anchor="middle" letter-spacing="-3">sidekick</text>
+      <text x="250" y="272" font-family="'Nunito', 'Arial Rounded MT Bold', sans-serif" font-size="98" font-weight="900" fill="#AF4E00" text-anchor="middle" letter-spacing="-3">sidekick</text>
+      <text x="250" y="265" font-family="'Nunito', 'Arial Rounded MT Bold', sans-serif" font-size="98" font-weight="900" fill="#C96000" text-anchor="middle" letter-spacing="-3">sidekick</text>
+      <!-- White wordmark on top -->
+      <text x="250" y="258" font-family="'Nunito', 'Arial Rounded MT Bold', sans-serif" font-size="98" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="-3">sidekick</text>
     </svg>
     <div class="sidebar-tagline">Playbook Hub</div>
   </div>
