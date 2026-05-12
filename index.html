@@ -138,9 +138,9 @@ kbd {
 }
 
 .brand-logo {
-  width: 132px;
-  height: 132px;
-  border-radius: 12px;
+  width: 180px;
+  height: 55px;
+  border-radius: 8px;
   display: block;
   box-shadow: var(--shadow-sm);
   overflow: hidden;
@@ -1117,31 +1117,26 @@ kbd {
 ============================================================ -->
 <aside class="sidebar" id="sidebar">
   <div class="sidebar-brand">
-    <svg class="brand-logo" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sidekick">
+    <svg class="brand-logo" viewBox="0 0 360 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sidekick">
       <defs>
-        <linearGradient id="reflectionFade" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.4"/>
-          <stop offset="55%" stop-color="#FFFFFF" stop-opacity="0.08"/>
-          <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+        <linearGradient id="textSheen" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+          <stop offset="55%" stop-color="#FFFFFF" stop-opacity="0.96"/>
+          <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.88"/>
+        </linearGradient>
+        <linearGradient id="bgShade" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FF7518" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#F05A00" stop-opacity="1"/>
         </linearGradient>
       </defs>
-      <!-- Orange background -->
-      <rect width="360" height="360" rx="8" fill="#FF6B00"/>
-      <!-- Reflection (mirrored, faded) -->
-      <text x="180" y="190"
+      <!-- Orange background with subtle vertical shading -->
+      <rect width="360" height="110" rx="8" fill="url(#bgShade)"/>
+      <!-- Wordmark with subtle sheen -->
+      <text x="180" y="78"
             font-family="'Archivo Black', system-ui, sans-serif"
-            font-size="74"
+            font-size="68"
             font-weight="900"
-            fill="url(#reflectionFade)"
-            text-anchor="middle"
-            letter-spacing="-2.5"
-            transform="scale(1, -1) translate(0, -395)">sidekick</text>
-      <!-- Main wordmark -->
-      <text x="180" y="190"
-            font-family="'Archivo Black', system-ui, sans-serif"
-            font-size="74"
-            font-weight="900"
-            fill="#FFFFFF"
+            fill="url(#textSheen)"
             text-anchor="middle"
             letter-spacing="-2.5">sidekick</text>
     </svg>
